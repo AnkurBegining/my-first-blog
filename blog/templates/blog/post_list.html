@@ -1,34 +1,11 @@
-<html>
-<head>
-    <title>Django Girls blog</title>
-</head>
-<body>
 <div>
-    <h1><a href="">Ankur Blog</a></h1>
+    <h1><a href="/">Ankur Blog</a></h1>
 </div>
 
-<div>
-    <p>published: 29.07.2017, 1:02</p>
-    <h2><a href="">What if nobody cares?</a></h2>
-    <p>
-        This qs has got very simple answer, no need of writing long list of lecture for this qs. First of all, you are
-        really damn idiot for asking this rubbish qs. Idiot, are you alive. You must be knowing Benjamin Franklin.Simple
-        theory of life dear, if you can't stand and care for yourself then no body is here to care for you. So don't ask
-        this question.Stand up and show to this world.Once you start caring for yourself then world will start loving
-        you. If you are good enough then world will surely love you and if they don't you,then also there is no problem,
-        love yourself at least. Don't ever think much what world think about you.
-
-
-    </p>
-</div>
-
-<div>
-    <p>published: 29.07.2017, 1:05</p>
-    <h2><a href="">My second post</a></h2>
-    <p>
-        I will again quote with one more screenshot. Dear , “Find yourself again”, you will not get this type of rubbish
-        questions in your mind.
-    </p>
-</div>
-</body>
-</html>
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
