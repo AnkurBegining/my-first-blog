@@ -11,8 +11,21 @@
         {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span
                 class="glyphicon glyphicon-pencil"></span></a>
-        <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+        <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span
+                class="glyphicon glyphicon-remove"></span></a>
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
+
+    <hr>
+    <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
+    {% for comment in post.comments.all %}
+        <div class="comment">
+            <div class="date">{{ comment.created_date }}</div>
+            <strong>{{ comment.author }}</strong>
+            <p>{{ comment.text|linebreaks }}</p>
+        </div>
+    {% empty %}
+        <p>No comments here yet :(</p>
+    {% endfor %}
 {% endblock %}
