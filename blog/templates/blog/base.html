@@ -17,6 +17,7 @@
 
     {% else %}
         <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+        <p class="top-menu"><small>(<a href="{% url 'signup' %}">Sign Up</a>)</small></p>
 
 
     {% endif %}
