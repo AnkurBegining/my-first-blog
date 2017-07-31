@@ -6,6 +6,7 @@ from .models import Post, Comment
 from .forms import PostForm, CommentForm
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
+from blog.forms import SignUpForm
 
 
 def post_list(request):
@@ -94,7 +95,7 @@ def comment_remove(request, pk):
 
 def signup(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
@@ -104,5 +105,5 @@ def signup(request):
             posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
             return render(request, 'blog/post_list.html', {'posts': posts})
     else:
-        form = UserCreationForm()
+        form = SignUpForm()
     return render(request, 'blog/signup.html', {'form': form})
