@@ -101,7 +101,8 @@ def signup(request):
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return redirect('home')
+            posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+            return render(request, 'blog/post_list.html', {'posts': posts})
     else:
         form = UserCreationForm()
-    return render(request, 'signup.html', {'form': form})
+    return render(request, 'blog/signup.html', {'form': form})
