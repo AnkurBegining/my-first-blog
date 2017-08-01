@@ -18,16 +18,20 @@ from blog.tokens import account_activation_token
 from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.contrib.auth.models import User
+import smtplib
+
 
 @login_required()
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 
+
 @login_required()
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
+
 
 @login_required()
 def post_new(request):
@@ -43,6 +47,7 @@ def post_new(request):
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
 
+
 @login_required()
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -56,7 +61,6 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
-
 
 
 @login_required()
@@ -92,17 +96,20 @@ def add_comment_to_post(request, pk):
         form = CommentForm()
     return render(request, 'blog/add_comment_to_post.html', {'form': form})
 
+
 @login_required()
 def comment_approve(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.approve()
     return redirect('post_detail', pk=comment.post.pk)
 
+
 @login_required()
 def comment_remove(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.delete()
     return redirect('post_detail', pk=comment.post.pk)
+
 
 def signup(request):
     if request.method == 'POST':
@@ -119,11 +126,13 @@ def signup(request):
                 'uid': urlsafe_base64_encode(force_bytes(user.pk)),
                 'token': account_activation_token.make_token(user),
             })
-            user.email_user(subject, message)
+            # user.email_user(subject, message)
+            send_verification_mail(user.email, message)
             return redirect('account_activation_sent')
     else:
         form = SignUpForm()
     return render(request, 'blog/signup.html', {'form': form})
+
 
 def account_activation_sent(request):
     return render(request, 'blog/account_activation_sent.html')
@@ -144,3 +153,16 @@ def activate(request, uidb64, token):
         return redirect('home')
     else:
         return render(request, 'blog/account_activation_invalid.html')
+
+
+email_address = 'shockwavemoto@gmail.com    '
+email_password = '9829667088'
+
+
+def send_verification_mail(email, msg):
+    print("send verificaion mail")
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login(email_address, email_password)
+    server.sendmail(email_address, email, msg)
+    server.quit()
