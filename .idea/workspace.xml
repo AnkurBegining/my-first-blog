@@ -21,8 +21,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="158" column="29" lean-forward="false" selection-start-line="158" selection-start-column="29" selection-end-line="158" selection-end-column="29" />
+            <state relative-caret-position="409">
+              <caret line="164" column="39" lean-forward="true" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -872,7 +872,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502193746491</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fix:host email address changed.">
+      <created>1502194500247</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1502194500247</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -907,7 +914,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: publish option added." />
     <MESSAGE value="fix:post_edit view option" />
     <MESSAGE value="feat: delete option added." />
     <MESSAGE value="feat: log in and log out option added." />
@@ -932,7 +938,8 @@
     <MESSAGE value="feat: confirmation email address add" />
     <MESSAGE value="fix: activation code to email" />
     <MESSAGE value="fix: activation code to email 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: activation code to email 1" />
+    <MESSAGE value="fix:host email address changed." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:host email address changed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1322,8 +1329,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="158" column="29" lean-forward="false" selection-start-line="158" selection-start-column="29" selection-end-line="158" selection-end-column="29" />
+        <state relative-caret-position="409">
+          <caret line="164" column="39" lean-forward="true" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>
