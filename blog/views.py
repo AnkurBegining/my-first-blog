@@ -150,7 +150,7 @@ def activate(request, uidb64, token):
         user.profile.email_confirmed = True
         user.save()
         login(request, user)
-        return redirect('home')
+        return redirect('post_detail')
     else:
         return render(request, 'blog/account_activation_invalid.html')
 
