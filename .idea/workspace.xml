@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eb7153dd-21ae-4cfe-abb1-e98c832ec8a8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/css/blog.css" afterPath="$PROJECT_DIR$/blog/static/css/blog.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,14 +43,14 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="63" column="58" lean-forward="false" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+            <state relative-caret-position="138">
+              <caret line="45" column="58" lean-forward="false" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
               <folding>
                 <element signature="e#1405#1411#0#HTML" expanded="true" />
                 <element signature="e#1685#1691#0#HTML" expanded="true" />
-                <element signature="e#1955#1961#0#HTML" expanded="true" />
-                <element signature="e#2312#2318#0#HTML" expanded="true" />
-                <element signature="e#2633#2639#0#HTML" expanded="true" />
+                <element signature="e#1972#1978#0#HTML" expanded="true" />
+                <element signature="e#2326#2332#0#HTML" expanded="true" />
+                <element signature="e#2647#2653#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,8 +163,8 @@
         <option value="$PROJECT_DIR$/blog/templates/blog/account_activation_invalid.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/account_activation_sent.html" />
         <option value="$PROJECT_DIR$/blog/views.py" />
-        <option value="$PROJECT_DIR$/blog/templates/blog/base.html" />
         <option value="$PROJECT_DIR$/blog/static/css/blog.css" />
+        <option value="$PROJECT_DIR$/blog/templates/blog/base.html" />
       </list>
     </option>
   </component>
@@ -543,13 +542,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501183057324</updated>
     </task>
-    <task id="LOCAL-00004" summary="feat: added all hosts as allowed hosts (settings.py)">
-      <created>1501266281980</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1501266281980</updated>
-    </task>
     <task id="LOCAL-00005" summary="feat:HTML of page changed.">
       <created>1501273722979</created>
       <option name="number" value="00005" />
@@ -886,14 +878,21 @@
       <option name="project" value="LOCAL" />
       <updated>1502214020957</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="fix:front up design">
+      <created>1502216203688</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1502216203688</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10278884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -921,7 +920,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: log in and log out option added." />
     <MESSAGE value="fix: log in and log out option added." />
     <MESSAGE value="fix: log in and log out option added with change in setting." />
     <MESSAGE value="fix: log in and log out option added with change in setting. 1" />
@@ -946,7 +944,8 @@
     <MESSAGE value="fix:host email address changed." />
     <MESSAGE value="fix:host email address changed .2" />
     <MESSAGE value="fix:host email address changed .3" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:host email address changed .3" />
+    <MESSAGE value="fix:front up design" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:front up design" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1340,14 +1339,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="63" column="58" lean-forward="false" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+        <state relative-caret-position="138">
+          <caret line="45" column="58" lean-forward="false" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
           <folding>
             <element signature="e#1405#1411#0#HTML" expanded="true" />
             <element signature="e#1685#1691#0#HTML" expanded="true" />
-            <element signature="e#1955#1961#0#HTML" expanded="true" />
-            <element signature="e#2312#2318#0#HTML" expanded="true" />
-            <element signature="e#2633#2639#0#HTML" expanded="true" />
+            <element signature="e#1972#1978#0#HTML" expanded="true" />
+            <element signature="e#2326#2332#0#HTML" expanded="true" />
+            <element signature="e#2647#2653#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
