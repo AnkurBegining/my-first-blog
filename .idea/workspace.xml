@@ -21,8 +21,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="152" column="9" lean-forward="true" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
+            <state relative-caret-position="460">
+              <caret line="153" column="51" lean-forward="false" selection-start-line="153" selection-start-column="51" selection-end-line="153" selection-end-column="51" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -542,13 +542,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501183057324</updated>
     </task>
-    <task id="LOCAL-00006" summary="fix: blog.urls">
-      <created>1501273950788</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1501273950788</updated>
-    </task>
     <task id="LOCAL-00007" summary="fix:  change in html file">
       <created>1501274153305</created>
       <option name="number" value="00007" />
@@ -885,7 +878,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502216375731</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="fix:log out button fix 1">
+      <created>1502285772076</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1502285772076</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -920,7 +920,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: log in and log out option added with change in setting." />
     <MESSAGE value="fix: log in and log out option added with change in setting. 1" />
     <MESSAGE value="fix: log in and log out option added with change in setting. 2" />
     <MESSAGE value="fix: log in and log out option added with change in setting. 3" />
@@ -945,7 +944,8 @@
     <MESSAGE value="fix:host email address changed .3" />
     <MESSAGE value="fix:front up design" />
     <MESSAGE value="fix:log out button fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:log out button fix" />
+    <MESSAGE value="fix:log out button fix 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:log out button fix 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1337,8 +1337,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="152" column="9" lean-forward="true" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
+        <state relative-caret-position="460">
+          <caret line="153" column="51" lean-forward="false" selection-start-line="153" selection-start-column="51" selection-end-line="153" selection-end-column="51" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>

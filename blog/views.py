@@ -151,7 +151,7 @@ def activate(request, uidb64, token):
         login(request, user)
         return redirect('post_detail')
     else:
-        return render(request, 'blog/post.html')
+        return render(request, 'blog/post_list.html')
 
 
 email_address = 'deployment334@gmail.com'
