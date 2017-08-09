@@ -151,14 +151,11 @@ def activate(request, uidb64, token):
         login(request, user)
         return redirect('post_detail')
     else:
-        return render(request, 'blog/account_activation_invalid.html')
+        return render(request, 'blog/post.html')
 
 
 email_address = 'deployment334@gmail.com'
 email_password = 'Dipadi@god5'
-
-
-
 
 
 def send_verification_mail(email, msg):
