@@ -7,5 +7,5 @@ db.sqlite3
 .DS_Store
 .idea/
 venv
-staticfiles
+heroku openstaticfiles
 .env
